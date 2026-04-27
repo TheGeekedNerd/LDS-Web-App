@@ -21,7 +21,7 @@ jobs:
       - name: Deploy to Azure Web App
         uses: azure/webapps-deploy@v3
         with:
-          app-name: 'LSD'   # 👈 Change if your app name differs
+          app-name: 'LocalDonationSystem'   # 👈 Change if your app name differs
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZURE_PUBLISH_PROFILE }}
           package: .
